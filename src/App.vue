@@ -4,30 +4,30 @@
 <template>
   <div id="website" class="bg-black w-full h-100vh text-white font-mono">
 
-    <div id="hero" class="relative h-[800px] flex-col justify-center items-center m-auto overflow-hidden">
+    <div id="hero" class="relative min-h-[1000px] flex-col justify-center items-center overflow-hidden">
 
       <div class="absolute inset-0 bg-[url('./assets/hero.jpg')] bg-cover bg-center filter blur-sm" />
       <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60" />
       <div class="absolute inset-0 bg-black/20" />
 
-      <div id="nav" class="relative font-bold text-xl flex justify-center items-center h-1/6">
+      <div id="nav" class="relative font-bold text-xl flex justify-center items-center h-[124px]">
         <div class="flex w-full">
           <img alt="logo" class="m-auto ml-8" />
           <button
-            class="m-auto mr-6 px-4 py-3 rounded-3xl ease-in-out duration-200 hover:bg-blue-500/30 hover:text-orange-600 active:bg-blue-700">About
+            class="m-auto mr-6 px-4 py-3 rounded-2xl ease-in-out duration-200 hover:bg-blue-800/50 hover:text-orange-500 active:bg-blue-700">About
             Us</button>
           <button
-            class="mx-6 px-4 py-3 rounded-3xl ease-in-out duration-200 hover:bg-blue-500/30 hover:text-orange-600 active:bg-blue-700">Contact
+            class="mx-6 px-4 py-3 rounded-2xl ease-in-out duration-200 hover:bg-blue-800/50 hover:text-orange-500 active:bg-blue-700">Contact
             Us</button>
           <button
-            class="text-orange-600 m-auto mx-8 mr-16 px-4 py-3 bg-blue-800 rounded-3xl ease-in-out duration-200 hover:bg-blue-700 active:bg-blue-600">Get
+            class="text-orange-500 m-auto mx-8 mr-16 px-4 py-3 bg-blue-800/80 rounded-2xl ease-in-out duration-200 hover:bg-blue-700 active:bg-blue-600">Get
             Your
             Free
             Trial</button>
         </div>
       </div>
 
-      <div id="hero-content" class="relative flex-col justify-center items-center max-w-[1200px] m-auto mt-40">
+      <div id="hero-content" class="relative flex-col justify-center items-center max-w-[1400px] px-24 m-auto mt-64">
         <div class="text-[4rem] text-orange-200 font-bold leading-tight max-w-[850px]">
           <p>Transform Your Fitness, Transform Your Life</p>
         </div>
@@ -42,14 +42,16 @@
       </div>
     </div>
 
-    <div id="mission" class="m-24 text-center">
-      <p class="text-4xl text-orange-400 font-bold mb-4">Driven by Passion, Powered by Community</p>
-      <p class="text-xl text-blue-200">IronWork Gym is dedicated to empowering individuals of all fitness levels to
-        reach their
-        potential. Through
-        our
-        supportive community, cutting-edge equipment, and expert trainers, we're commited to helping you unlock the
-        strength you didn't know you had.</p>
+    <div id="mission" class="flex justify-center items-center h-[500px]">
+      <div class="text-center w-3/4">
+        <p class="text-4xl text-orange-400 font-bold mb-4">Driven by Passion, Powered by Community</p>
+        <p class="text-xl text-blue-200">IronWork Gym is dedicated to empowering individuals of all fitness levels to
+          reach their
+          potential. Through
+          our
+          supportive community, cutting-edge equipment, and expert trainers, we're commited to helping you unlock the
+          strength you didn't know you had.</p>
+      </div>
     </div>
 
     <div id="cta" class="relative overflow-hidden">
@@ -59,69 +61,69 @@
       <div class="absolute inset-0 bg-black/20" />
 
       <div id="cta-content" class="relative flex-col text-center m-24">
-        <p class="text-4xl text-orange-400 font-bold mb-2">Membership Options</p>
+        <p class="text-4xl text-orange-500 font-bold mb-2">Membership Options</p>
 
         <div id="card-container" class="flex justify-center">
 
-          <div id="card" class="m-8 p-8 w-[400px] bg-black/80 rounded-3xl">
-            <p class="text-2xl text-orange-300">Basic Plan</p>
-            <p class="text-xl text-blue-200">Price: $29/month</p>
-            <hr class="border-gray-500" />
-            <div class="text-left p-4">
-              <p class="text-2xl text-orange-300">Features:</p>
+          <div id="card" class="m-8 p-8 w-[400px] bg-black/80 rounded-2xl">
+            <p class="font-bold text-2xl text-orange-400">Basic Plan</p>
+            <p class="font-bold text-xl text-blue-400">Price: $29/month</p>
+            <hr class="h-[2px] bg-blue-300/50 my-4 border-0 rounded">
+            <div class="text-left px-6">
+              <p class="text-2xl text-orange-400">Features:</p>
               <ul class="text-lg text-blue-100 marker:text-blue-100 list-outside list-disc">
-                <li>Access to gym facilities during staffed hours</li>
-                <li>Group finess classes (2 per month)</li>
-                <li>Access to cardio and weightlifting areas</li>
+                <li class="my-2">Access to gym facilities during staffed hours</li>
+                <li class="my-2">Group finess classes (2 per month)</li>
+                <li class="my-2">Access to cardio and weightlifting areas</li>
               </ul>
             </div>
-            <hr class="border-gray-500" />
-            <p class="text-left text-xl text-orange-300 m-4 mb-0">Ideal For: </p>
-            <p class="text-left text-lg text-blue-100 m-4 mt-0">Beginners or casual gym-goers looking for
+            <hr class="h-[2px] bg-blue-300/50 my-4 border-0 rounded">
+            <p class="text-left text-xl text-orange-400 mx-6 mb-0">Ideal For: </p>
+            <p class="text-left text-lg text-blue-100 mx-6 my-1">Beginners or casual gym-goers looking for
               flexible, basic
               access.</p>
           </div>
 
-          <div id="card" class="m-8 p-8 w-[400px] bg-black/80 rounded-3xl">
-            <p class="text-2xl text-orange-300">Standard Plan</p>
-            <p class="text-xl text-blue-200">Price: $59/month</p>
-            <hr class="border-gray-500" />
-            <div class="text-left p-4">
-              <p class="text-2xl text-orange-300">Features:</p>
+          <div id="card" class="m-8 p-8 w-[400px] bg-black/80 rounded-2xl">
+            <p class="font-bold text-2xl text-orange-400">Standard Plan</p>
+            <p class="font-bold text-xl text-blue-400">Price: $59/month</p>
+            <hr class="h-[2px] bg-blue-300/50 my-4 border-0 rounded">
+            <div class="text-left px-6">
+              <p class="text-2xl text-orange-400">Features:</p>
               <ul class="text-lg text-blue-100 marker:text-blue-100 list-outside list-disc">
-                <li>24/7 gym access</li>
-                <li>Unlimited group fitness classes</li>
-                <li>Complimentary fitness assessment(once per quarter)</li>
+                <li class="my-2">24/7 gym access</li>
+                <li class="my-2">Unlimited group fitness classes</li>
+                <li class="my-2">Complimentary fitness assessment(once per quarter)</li>
               </ul>
             </div>
-            <hr class="border-gray-500" />
-            <p class="text-left text-xl text-orange-300 m-4 mb-0">Ideal For: </p>
-            <p class="text-left text-lg text-blue-100 m-4 mt-0">Members who want more flexibility and group class
+            <hr class="h-[2px] bg-blue-300/50 my-4 border-0 rounded">
+            <p class="text-left text-xl text-orange-400 mx-6 mb-0">Ideal For: </p>
+            <p class="text-left text-lg text-blue-100 mx-6 my-1">Members who want more flexibility and group class
               access.</p>
           </div>
 
-          <div id="card" class="m-8 p-8 w-[400px] bg-black/80 rounded-3xl">
-            <p class="text-2xl text-orange-300">Premium Plan</p>
-            <p class="text-xl text-blue-200">Price: $99/month</p>
-            <hr class="border-gray-500" />
-            <div class="text-left p-4">
-              <p class="text-2xl text-orange-300">Features:</p>
+          <div id="card" class="m-8 p-8 w-[400px] bg-black/80 rounded-2xl">
+            <p class="font-bold text-2xl text-orange-400">Premium Plan</p>
+            <p class="font-bold text-xl text-blue-400">Price: $99/month</p>
+            <hr class="h-[2px] bg-blue-300/50 my-4 border-0 rounded">
+            <div class="text-left px-6">
+              <p class="text-2xl text-orange-400">Features:</p>
               <ul class="text-lg text-blue-100 marker:text-blue-100 list-outside list-disc">
-                <li>24/7 gym access</li>
-                <li>Unlimited group fitness and specialty classes</li>
-                <li>Monthly one-on-one session with a persnal trainer</li>
-                <li>Access to VIP facilities (sauna, stream room)</li>
-                <li>10% discount on merchandise and supplements</li>
+                <li class="my-2">24/7 gym access</li>
+                <li class="my-2">Unlimited group fitness and specialty classes</li>
+                <li class="my-2">Monthly one-on-one session with a persnal trainer</li>
+                <li class="my-2">Access to VIP facilities (sauna, stream room)</li>
+                <li class="my-2">10% discount on merchandise and supplements</li>
               </ul>
             </div>
-            <hr class="border-gray-500" />
-            <p class="text-left text-xl text-orange-300 m-4 mb-0">Ideal For: </p>
-            <p class="text-left text-lg text-blue-100 m-4 mt-0">Dedicated fitness enthusiasts who want the full
+            <hr class="h-[2px] bg-blue-300/50 my-4 border-0 rounded">
+            <p class="text-left text-xl text-orange-400 mx-6 mb-0">Ideal For: </p>
+            <p class="text-left text-lg text-blue-100 mx-6 my-1">Dedicated fitness enthusiasts who want the full
               experience.</p>
           </div>
         </div>
         <button
-          class="text-orange-600 text-xl font-bold m-auto mx-8 mr-16 px-4 py-3 bg-blue-800 rounded-3xl ease-in-out duration-200 hover:bg-blue-700 active:bg-blue-600">Get
+          class="text-orange-500 text-xl font-bold m-auto mx-8 mr-16 px-4 py-3 bg-blue-800/80 rounded-2xl ease-in-out duration-200 hover:bg-blue-700 active:bg-blue-600">Get
           Your
           Free
           Trial</button>
@@ -130,11 +132,30 @@
 
     </div>
 
-    <div id="footer">
-      <p>Address: 123 Austin Fitness, Austin, TX 78701</p>
-      <p>Phone: (512) 123-4567</p>
-      <p>Email: info@ironworksaustin.com</p>
+    <div id="footer" class="flex justify-center items-center h-[300px]">
+      <div class="flex-col justify-center items-center">
+        <div class="font-bold text-lg">
+          <img alt="logo" />
+          <p class="text-center font-bold text-3xl text-orange-500">Contact Us</p>
+          <hr class="h-[2px] bg-blue-300/50 my-2 border-0 rounded">
+          <div class="px-4">
+            <div class="flex">
+              <p class="mr-2 text-orange-300">Address:</p>
+              <p class="text-blue-200">123 Austin Fitness, Austin, TX 78701</p>
+            </div>
+            <div class="flex">
+              <p class="mr-2 text-orange-300">Phone:</p>
+              <p class="text-blue-200">(512) 123-4567</p>
+            </div>
+            <div class="flex">
+              <p class="mr-2 text-orange-300">Email:</p>
+              <p class="text-blue-200">info@ironworksaustin.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
 </template>
 
